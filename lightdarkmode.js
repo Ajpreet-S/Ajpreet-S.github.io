@@ -1,7 +1,7 @@
 let body = document.querySelector('body');
 let button = document.getElementById('lightdarkmodebutton');
 button.addEventListener('click', function() {
-    if (document.querySelector("body").dataset.bsTheme === 'light') {
+    if (body.dataset.bsTheme === 'light') {
         body.setAttribute('data-bs-theme', 'dark')
     } else {
         body.setAttribute('data-bs-theme', 'light')
