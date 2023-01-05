@@ -1,11 +1,14 @@
 function JumboTron() {
     return (
         <div id={"Jumbotron"}
-             className={"p-5 mb-5 mx-md-5 bg-gradient border border-success border-opacity-10 rounded-3 shadow-sm"}>
+             className={"p-5 mb-5 mx-md-5 bg-gradient border border-success border-opacity-10 rounded-3 shadow-sm vh"}>
             <div className={"py-5"}>
-                <h1 className={"display-4 fw-bold"}>I'm learning <span className={"text-info"}>React</span></h1>
-                <p className={"col-md-8 fs-4"}>viverra molestie tibique ex odio deterruisset fastidii montes sadipscing
-                    expetendis detracto saepe vituperata euripidis dicta gravida maiestatis expetenda sanctus nam</p>
+                <h1 className={"display-4 fw-bold"}>I'm learning <span className={"text-info"}>React</span> and <span
+                    className={"text-success"}>Node.js</span></h1>
+                <p className={"col-md-8 fs-4"}>
+                    React is popular library used for front-end development, and Node.js is a JavaScript runtime
+                    environment. Right now I'm learning the ins and outs of using React with Node.js on my local machine.
+                </p>
             </div>
         </div>
     );
@@ -13,7 +16,7 @@ function JumboTron() {
 
 function TechnologiesCard(props) {
     return (
-        <div data-aos="flip-down" className={"row align-items-center mx-1 mx-sm-2"}>
+        <div data-aos="flip-down" className={"technologycard row align-items-center mx-1 mx-sm-2"}>
             <div className={"card mb-3 px-3 col-8"}>
                 <div className={"card-body"}>
                     <h3 className={"font-monospace lead fw-bold fs-3 card-title"}>{props.name}</h3>
@@ -21,7 +24,7 @@ function TechnologiesCard(props) {
                 </div>
             </div>
             <div className={"col-3 text-center"}>
-                <img className={"img"} src={props.image} alt={props.name} width={"96px"}/>
+                <img className={"img"} src={props.image} alt={props.name} width={"100rem"}/>
             </div>
         </div>
     );
@@ -29,22 +32,22 @@ function TechnologiesCard(props) {
 
 function CurrentTechnologies() {
     return (
-        <section data-aos="fade-up" id={"technologies"} className={"mb-5"}>
+        <section data-aos="fade-up" id={"technologies"} className={"mb-4 py-5 border-top"}>
             <h2 className={"text-center display-5 mb-4"}>What went into making this website?</h2>
             <TechnologiesCard name={"HTML, CSS, JavaScript"}
-                              description={"adipiscing feugait vivendo petentium imperdiet graece definitiones vim nascetur similique platonem fastidii eget graecis rhoncus dissentiunt mentitum"}
+                              description={"The basic tools needed to make any basic website."}
                               image={"./images/icons8-happy-file.svg"}/>
             <TechnologiesCard name={"Bootstrap"}
-                              description={"at vituperatoribus doctus vidisse sanctus dissentiunt mutat mei placerat iusto dicat vivamus sapientem gubergren potenti mentitum quaerendum amet"}
+                              description={"A popular CSS framework that I've used to help quickly style and structure the site."}
                               image={"./images/bootstrap-logo.svg"}/>
             <TechnologiesCard name={"React"}
-                              description={"lacinia labores evertitur verterem errem novum noluisse habitant sapientem penatibus vituperata iudicabit splendide singulis interdum montes dicit falli sociosqu qui"}
+                              description={"React is a popular frontend JavaScript library used for building user interfaces."}
                               image={"./images/icons8-react.svg"}/>
             <TechnologiesCard name={"Github Pages"}
-                              description={"veniam rhoncus semper a egestas pulvinar in civibus tristique adipiscing mandamus gloriatur sadipscing ridiculus congue consul porta dictum lobortis dicat"}
-                              image={"./images/icons8-github.svg"}/>
+                              description={"\"GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website.\""}
+                                image={"./images/icons8-github.svg"}/>
             <TechnologiesCard name={"Google Domains"}
-                              description={"pertinax oporteat qualisque verterem non fabulas torquent facilisis eleifend postea iudicabit aperiri euripidis deseruisse suspendisse solum indoctum veri epicuri sociis"}
+                              description={"\"Google Domains is a domain name registrar operated by Google. The service offers domain registration, DNS hosting, dynamic DNS, domain forwarding, and email forwarding. It provides native integration support for Google Cloud DNS and Google Workspace.\""}
                               image={"./images/icons8-google.svg"}/>
         </section>
     );
@@ -52,23 +55,24 @@ function CurrentTechnologies() {
 
 function FutureTechnologies() {
     return (
-        <section data-aos="fade-up" id={"technologies"} className={"mb-5"}>
-            <h2 className={"text-center display-5"}>Plans for this website</h2>
+        <section data-aos="fade-up" id={"technologies"} className={"mb-4 border-top py-5"}>
+            <h2 className={"text-center display-5 bg-gradient"}>Plans for this website</h2>
             <div className={"mb-4 mx-3 p-3"}>
-                <p>hinc altera elaboraret graeco praesent quod ubique invidunt interpretaris feugiat dicant similique
-                    expetendis accusata gravida singulis aenean idque alterum quaestio ornatus equidem conubia lacinia
-                    mollis fastidii class molestie rutrum aliquip adhuc omittantur dicunt ea mandamus consequat
-                    accusata</p>
+                <p>This is my first personal full-stack web development project. My goal for this website project is to
+                    learn the basics and tools used for full-stack development, and for me to have some fun with it
+                    along the way. There's a lot for me to learn and implement all at once, so the plan is work on
+                    changes
+                    over time as I learn more. Here are my next goals for my learning and this website project.</p>
             </div>
-            <TechnologiesCard name={"More learning and updating the site"}
-                              description={"doctus prompta quem laoreet errem vitae erat volumus persecuti bibendum massa sollicitudin pretium inceptos possim ad utamur mattis nullam eros fabulas graeci praesent"}
+            <TechnologiesCard name={"Remaking this site"}
+                              description={"I'm still in the process of learning React. As I learn more about using React, I'll update and work more on the site to reflect that growth, and for practice."}
                               image={"./images/icons8-construction.svg"}/>
-            <TechnologiesCard name={"Azure"}
-                              description={"tale consectetur pro gloriatur verear numquam eros habeo repudiare pretium te quot ornare appareat efficitur platea has ad maiorum solum"}
-                              image={"./images/icons8-azure.svg"}/>
             <TechnologiesCard name={"Node.js"}
-                              description={"sapien epicurei solum voluptaria hac ferri vestibulum disputationi iuvaret facilisis singulis propriae alia honestatis efficitur graece cursus cursus rhoncus necessitatibus putent docendi suavitate"}
+                              description={"NodeJS is an open source, cross-platform JavaScript runtime environment. I've just started learning about Node and about using it, but I plan on having my website use NodeJS for React."}
                               image={"./images/Node.js_logo.svg"}/>
+            <TechnologiesCard name={"Azure"}
+                              description={"Azure is Microsoft's cloud platform that can be used for a lot of things. Once I get comfortable with NodeJS, I'll look into deploying a NodeJS web app on Azure since I cannot do so using GitHub Pages."}
+                              image={"./images/icons8-azure.svg"}/>
         </section>
     );
 }
