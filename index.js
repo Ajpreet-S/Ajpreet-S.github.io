@@ -6,8 +6,9 @@ function JumboTron() {
                 <h1 className={"display-4 fw-bold"}>I'm learning <span className={"text-info"}>React</span> and <span
                     className={"text-success"}>Node.js</span></h1>
                 <p className={"col-md-8 fs-4"}>
-                    React is popular library used for front-end development, and Node.js is a JavaScript runtime
-                    environment. Right now I'm learning the ins and outs of using React with Node.js on my local machine.
+                    Update: I am busy with academics! I'm working on getting ahead in my studies and classes to create
+                    the
+                    free time that I want in order to learn more on React and Node.js.
                 </p>
             </div>
         </div>
@@ -24,7 +25,9 @@ function TechnologiesCard(props) {
                 </div>
             </div>
             <div className={"col-3 text-center"}>
-                <img className={"img"} src={props.image} alt={props.name} width={"100rem"}/>
+                <a href={props.href} target={"_blank"}>
+                    <img className={"img"} src={props.image} alt={props.name} width={"100rem"}/>
+                </a>
             </div>
         </div>
     );
@@ -39,16 +42,20 @@ function CurrentTechnologies() {
                               image={"./images/icons8-happy-file.svg"}/>
             <TechnologiesCard name={"Bootstrap"}
                               description={"A popular CSS framework that I've used to help quickly style and structure the site."}
-                              image={"./images/bootstrap-logo.svg"}/>
+                              image={"./images/bootstrap-logo.svg"}
+                              href={"https://getbootstrap.com/"}/>
             <TechnologiesCard name={"React"}
                               description={"React is a popular frontend JavaScript library used for building user interfaces."}
-                              image={"./images/icons8-react.svg"}/>
+                              image={"./images/icons8-react.svg"}
+                              href={"https://reactjs.org/"}/>
             <TechnologiesCard name={"Github Pages"}
                               description={"\"GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website.\""}
-                                image={"./images/icons8-github.svg"}/>
+                              image={"./images/icons8-github.svg"}
+                              href={"https://pages.github.com/"}/>
             <TechnologiesCard name={"Google Domains"}
                               description={"\"Google Domains is a domain name registrar operated by Google. The service offers domain registration, DNS hosting, dynamic DNS, domain forwarding, and email forwarding. It provides native integration support for Google Cloud DNS and Google Workspace.\""}
-                              image={"./images/icons8-google.svg"}/>
+                              image={"./images/icons8-google.svg"}
+                              href={"https://domains.google/"}/>
         </section>
     );
 }
@@ -69,10 +76,12 @@ function FutureTechnologies() {
                               image={"./images/icons8-construction.svg"}/>
             <TechnologiesCard name={"Node.js"}
                               description={"NodeJS is an open source, cross-platform JavaScript runtime environment. I've just started learning about Node and about using it, but I plan on having my website use NodeJS for React."}
-                              image={"./images/Node.js_logo.svg"}/>
+                              image={"./images/Node.js_logo.svg"}
+                              href={"https://nodejs.org/en/about/"}/>
             <TechnologiesCard name={"Azure"}
                               description={"Azure is Microsoft's cloud platform that can be used for a lot of things. Once I get comfortable with NodeJS, I'll look into deploying a NodeJS web app on Azure since I cannot do so using GitHub Pages."}
-                              image={"./images/icons8-azure.svg"}/>
+                              image={"./images/icons8-azure.svg"}
+                              href={"https://azure.microsoft.com/en-us/"}/>
         </section>
     );
 }
