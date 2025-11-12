@@ -3,12 +3,9 @@ function JumboTron() {
         <div id={"Jumbotron"}
              className={"p-5 mb-5 mx-md-5 bg-gradient border border-success border-opacity-10 rounded-3 shadow-sm vh"}>
             <div className={"py-5"}>
-                <h1 className={"display-4 fw-bold"}>I'm learning <span className={"text-info"}>React</span> and <span
-                    className={"text-success"}>Node.js</span></h1>
+                <h1 className={"display-4 fw-bold"}Under Construction 🚧</h1>
                 <p className={"col-md-8 fs-4"}>
-                    Update: I am busy with academics! I'm working on getting ahead in my studies and classes to create
-                    the
-                    free time that I want in order to learn more on React and Node.js.
+                    Will figure out what I want to do with this web page and do it, some day.
                 </p>
             </div>
         </div>
